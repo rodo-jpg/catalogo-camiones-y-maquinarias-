@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    height: 50px;
+    margin-right: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+h2, h3 {
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.category-item, .product-item {
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.2s;
+    display: inline-block;
+    margin: 10px;
+    width: 200px;
+}
+
+.category-item img, .product-item img {
+    width: 100%;
+    height: auto;
+}
+
+.category-item:hover, .product-item:hover {
+    transform: scale(1.05);
+}
+
+#product-images img {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+    display: block;
+}
+
+.background-image {
+    background-image: url('../img/fondo2.jpg');
+    background-size: cover;
+    height: 200px;
+}
