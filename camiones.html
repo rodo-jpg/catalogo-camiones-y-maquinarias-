@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camiones y Maquinarias Hermanos Ventura</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>  
+    <header>
+        <div class="logo-header">
+            <img src="img/image.jpg" alt="Logo de Camiones y Maquinarias Hermanos Ventura" class="logo">
+            <h1> Hnos Ventura s.a.c </h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('maquinarias')">camiones</a></li>
+                <li><a href="#" onclick="showSection('inicio')">Inicio</a></li>
+                <li><a href="#" onclick="showSection('nosotros')">Nosotros</a></li>
+                <li><a href="https://wa.me/944420523" target="_blank">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" style="display:none;">
+            <h2>Bienvenidos a Camiones y Maquinarias Hermanos Ventura</h2>
+            <p>Somos una empresa líder dedicada a la venta y alquiler de maquinaria pesada, con una sólida trayectoria en el sector de la construcción y minería. Nuestro compromiso es proporcionarte soluciones eficientes y confiables para tus proyectos más exigentes. Contamos con una amplia gama de equipos de última generación, adaptados a las necesidades específicas de cada cliente.</p>
+        
+            <p><strong>Nuestros servicios incluyen:</strong></p>
+            <ul>
+                <li>Venta y Alquiler de Maquinaria Pesada: Disponemos de una extensa flota de equipos como excavadoras, bulldozers, cargadores frontales, volquetes, grúas, entre otros, para cubrir todas tus necesidades operativas.</li>
+                <li>Asesoramiento Especializado: Nuestro equipo de expertos está listo para ofrecerte asesoramiento técnico y logístico, asegurando que el equipo seleccionado cumpla con tus requerimientos y expectativas.</li>
+                <li>Mantenimiento Preventivo y Reparaciones: Garantizamos el mantenimiento periódico de nuestros equipos para optimizar su rendimiento y prolongar su vida útil. Además, ofrecemos servicios de reparación rápidos y eficientes para minimizar tiempos de inactividad.</li>
+                <li>Soporte 24/7: Estamos comprometidos con tu satisfacción. Por ello, proporcionamos asistencia técnica continua, disponible las 24 horas del día, los 7 días de la semana, para atender cualquier emergencia que pueda surgir.</li>
+                <li>Compromiso con la Calidad y Seguridad: Priorizamos la seguridad en cada uno de nuestros servicios y equipos. Cumplimos con las normativas y estándares más estrictos para garantizar un entorno de trabajo seguro y confiable.</li>
+            </ul>
+        
+            <p><strong>Contacta con nosotros:</strong></p>
+            <p>Estamos aquí para ayudarte a llevar tu proyecto al siguiente nivel. Ya sea que necesites comprar o alquilar maquinaria pesada, en Camiones y Maquinarias Hermanos Ventura encontrarás la solución perfecta. Visítanos en nuestras instalaciones o contáctanos por teléfono o correo electrónico para más información.</p>
+            <p>¡Confía en nosotros para hacer realidad tus proyectos de construcción y minería con eficiencia y profesionalismo!</p>
+            <img src="img/gente1.png" alt="Imagen destacada" class="hero-image">
+        </section>
+
+        <section id="nosotros" style="display:none;">
+            <h2>Sobre Nosotros</h2>
+            <p>Camiones y Maquinarias Hermanos Ventura es una empresa con más de 20 años de experiencia en el sector de la maquinaria pesada. Nuestro compromiso es ofrecer equipos de la más alta calidad y un servicio excepcional a nuestros clientes.</p>
+            <img src="img/gente1.png" alt="Sobre Nosotros" class="hero-image">
+        </section>
+
+        <section id="maquinarias" class="active">
+            <h2>Unidades</h2>
+            <section class="categories" id="categories">
+                <div class="category-item" onclick="showCategory('tractos')">
+                    <img src="img/tracto1/tracto1.jpeg" alt="Tractos">
+                    <h3>TRACTOS</h3>
+                    <p>TRACTOS</p>
+                </div>
+                <div class="category-item" onclick="showCategory('volquetes')">
+                    <img src="img/volquete/1.jpeg" alt="Volquetes">
+                    <h3>VOLQUETES</h3>
+                    <p>VOLQUETES</p>
+                </div>
+                <div class="category-item" onclick="showCategory('cargadores')">
+                    <img src="img/agre.png" alt="Cargador Frontal">
+                    <h3>CARGADOR FRONTAL</h3>
+                    <p>CARGADOR FRONTAL</p>
+                </div>
+                <div class="category-item" onclick="showCategory('excavadoras')">
+                    <img src="img/excavadora/1.jpeg" alt="Excavadoras">
+                    <h3>EXCAVADORAS</h3>
+                    <p>EXCAVADORAS</p>
+                </div>
+                <div class="category-item" onclick="showCategory('otras')">
+                    <img src="img/agre.png" alt="Otras Unidades">
+                    <h3>OTRAS UNIDADES</h3>
+                    <p>OTRAS UNIDADES</p>
+                </div>
+            </section>
+        </section>
+
+        <section id="tractos" class="category-products" style="display:none;">
+            <div class="background-image"></div>
+            <h3>Productos de Tractos</h3>
+            <button onclick="goBack()">Regresar</button>
+            <div class="product-item" onclick="showProductImages('volvo-fh-440')">
+                <img src="img/tracto1/tracto..jpeg" alt="Volvo FH 440">
+                <p>Marca. VOLVO
+                    Modelo. Fh480
+                    CAJA.   I SHIFT
+                    Tracción.  6𝐗4
+                    SUSPENSIÓN neumáticos
+                    Año 2016 modelo 2017<br>PRECIO:CONVERSABLE</p> <li><a href="https://wa.me/944420523" target="_blank">Contacto</a></li>
+            </div>
+            <div class="product-item" onclick="showProductImages('mercedes-2644')">
+                <img src="img/tracto2/tracto2.jpeg" alt="Mercedes Benz Actros 2644">
+                <p>Marca. Scania
+                    Modelo.  R480
+                    Caja.     OPTICRUISE
+                    TRACCION.  6𝐱4
+                    SUSPENSIÓN neumáticos
+                    Año. 2019<br>PRECIO:CONVERSABLE</p><li><a href="https://wa.me/944420523" target="_blank">Contacto</a></li>
+            </div>
+            <div class="product-item" onclick="showProductImages('mercedes-2645')">
+                <img src="img/tracto3/1.jpeg" alt="Mercedes Benz Actros 2645">
+                <p>Marca.  Scania
+                    Modelo.  G460
+                    CAJA.  OPTICRUISE
+                    TRACCION.  6𝐱4
+                    SUSPENSIÓN neumáticos
+                    Año. 2013.md 2014 <br>PRECIO:CONVERSABLE</p><li><a href="https://wa.me/944420523" target="_blank">Contacto</a></li>
+            </div>
+            <div class="product-item" onclick="showProductImages('scania-r460')">
+                <img src="img/tracto4/1.jpeg" alt="Scania R460">
+                <p>Marca. Scania
+                    Modelo.  P450
+                    CAJA.  OPTICRUISE
+                    TRACCION.   6𝐱4
+                    SUSPENSIÓN neumáticos
+                    Año.   2022<br>PRECIO:CONVERSABLE</p><li><a href="https://wa.me/944420523" target="_blank">Contacto</a></li>
+            </div>
+            <div class="product-item" onclick="showProductImages('tracto')">
+                <img src="img/tracto5/1.jpeg" alt="Volvo FH 480 HP">
+                <p>Tracto Remolcado
+                    MARCA. Freightliner
+                    Modelo.  M2_112
+                    Caja.  Fuller 18 VELO
+                    Tracción 6𝑋4
+                    SUSPENSIÓN neumáticos
+                    Año 2018<br>PRECIO:CONVERSABLE</p><li><a href="https://wa.me/944420523" target="_blank">Contacto</a></li>
+            </div>
+            <div class="product-item" onclick="showProductImages('tracto1')">
+                <img src="img/tracto6/1.jpeg" alt="Volvo FH480">
+                <p>Tracto Remolcado
+                    MARCA.  VOLVO
+                    Modelo.   FH480
+                    CAJA. I SHIFT SUPER REDU
+                    Tracción. 6𝐗4
+                    SUSPENSIÓN. NEUMÁTICO
+                    AÑO 2017<br>PRECIO:CONVERSABLE</p><li><a href="https://wa.me/944420523" target="_blank">Contacto</a></li>
+            </div>
+            <div class="product-item" onclick="showProductImages('tracto2')">
+                <img src="img/tracto7/1.jpeg " alt="MACK ANTHEM">
+                <p>Tracto Remolcado 
+                    MARCA. MACK ANTHEM
+                    MOTOR MP8 
+                    caja mDrive
+                    Tracción 6𝑋4
+                    SUSPENSIÓN neumáticos
+                    Año. 2021<br>PRECIO:CONVERSABLE</p><li><a href="https://wa.me/944420523" target="_blank">Contacto</a></li>
+            </div>
+        </section>
+
+        <section id="volquetes" class="category-products" style="display:none;">
+            <div class="background-image"></div>
+            <h3>Productos de Volquetes</h3>
+            <button onclick="goBack()">Regresar</button>
+            <div class="product-item" onclick="showProductImages('volquete1')">
+                <img src="img/volquete/1.jpeg" alt="Volquete 1">
+                <p>Volquete
+                    Marca Volvo
+                    Modelo. FMX480
+                    CAJA.  MECÁNICA
+                    TRACCION. 6𝐱4
+                    TOLVA. 15 METROS
+                    Año. 2016</p>PRECIO:CONVERSABLE</p><li><a href="https://wa.me/944420523" target="_blank">Contacto</a></li>
+            </div>
+            <div class="product-item" onclick="showProductImages('volquete2')">
+                <img src="img/volquete1/1.jpeg" alt="Volquete 2">
+                <p>Volquete 
+                    MARCA volvo 
+                    Modelo FMX 500
+                    Caja I_SHIFT super red
+                    Tracción.  6𝐗4
+                    TOLVA.   15 METROS CÚBIC
+                    Año. 2021</p>PRECIO:CONVERSABLE</p><li><a href="https://wa.me/944420523" target="_blank">Contacto</a></li>
+            </div>
+        </section>
+        <section id="cargadores" class="category-products" style="display:none;">
+            <div class="background-image"></div>
+            <h3>Productos de Cargador Frontal</h3>
+            <button onclick="goBack()">Regresar</button>
+            <div class="product-item" onclick="showProductImages('cargador1')">
+                <img src="img/cargador1.jpg" alt="Cargador Frontal 1">
+                <p>Descripción del Cargador Frontal 1</p>
+            </div>
+            <div class="product-item" onclick="showProductImages('cargador2')">
+                <img src="img/cargador2.jpg" alt="Cargador Frontal 2">
+                <p>Descripción del Cargador Frontal 2</p>
+            </div>
+        </section>
+        <section id="excavadoras" class="category-products" style="display:none;">
+            <div class="background-image"></div>
+            <h3>Productos de Excavadoras</h3>
+            <button onclick="goBack()">Regresar</button>
+            <div class="product-item" onclick="showProductImages('excavadora1')">
+                <img src="img/excavadora/1.jpeg" alt="Excavadora 1">
+                <p>Retro excavadora
+                    MARCA. Jhonn DEERE
+                    Modelo. 310L
+                    Tracción 4𝑋4
+                    Brazos.     Extensible 
+                    Año 2024 nueva pitó<br>PRECIO:CONVERSABLE</p><li><a href="https://wa.me/944420523" target="_blank">Contacto</a></li>
+            </div>
+            <div class="product-item" onclick="showProductImages('excavadora2')">
+                <img src="img/excavadora1/1.jpeg" alt="Excavadora 2">
+                <p>Excavadora HYUNDAI
+                    MODELO. 380L_c</p>PRECIO:CONVERSABLE</p><li><a href="https://wa.me/944420523" target="_blank">Contacto</a></li>
+            </div>
+        </section>
+        <section id="otras" class="category-products" style="display:none;">
+            <div class="background-image"></div>
+            <h3>Productos de Otras Unidades</h3>
+            <button onclick="goBack()">Regresar</button>
+            <div class="product-item" onclick="showProductImages('otras1')">
+                <img src="img/otras1.jpg" alt="Otras Unidades 1">
+                <p>Descripción de Otras Unidades 1</p>
+            </div>
+            <div class="product-item" onclick="showProductImages('otras2')">
+                <img src="img/otras2.jpg" alt="Otras Unidades 2">
+                <p>Descripción de Otras Unidades 2</p>
+            </div>
+        </section>
+        <!-- Sección para mostrar imágenes adicionales -->
+        <section id="product-images" style="display:none;">
+            <h3>Imágenes del Producto</h3>
+            <button onclick="closeProductImages()">Cerrar</button>
+            <div id="product-image-gallery"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
